@@ -2,11 +2,16 @@
   "name": "globomantics",
   "version": "0.1.0",
   "private": true,
+  "repository": {
+    "url": "git+https://github.com/ck4957/ps-react-housing-app.git"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy":"gh-pages -d dist"
   },
   "dependencies": {
     "next": "12.2.2",
